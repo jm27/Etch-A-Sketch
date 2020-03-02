@@ -53,20 +53,29 @@ function draw({ key }) {
     default:
       break;
   }
-  ctx.lineTo(x,y);
+  ctx.lineTo(x, y);
   ctx.stroke();
 }
 
 // Write a handler for keys
 function handleKey(e) {
-    if (e.key.includes('Arrow')) {
-        e.preventDefault(); // Prevent default only on Arrow keys
-        draw({key : e.key}); // Passing key is equal to key pressed 
-    }
+  if (e.key.includes("Arrow")) {
+    e.preventDefault(); // Prevent default only on Arrow keys
+    draw({ key: e.key }); // Passing key is equal to key pressed
+  }
 }
 
 // Clear/Shake function
-
+function clearCanvas(){
+    canvas.classList.add('shake'); // Add shake class
+    ctx.clearRect(0,0, width, height); // Delete canvas from starting point to end
+    canvas.addEventListener(
+        'animationend', // Event listener for animation end
+        function(){
+            canvas.classList.remove('shake') // Remove shake class
+        }
+    )
+}
 // Listen for arrow keys
-window.addEventListener('keydown', handleKey);
-btn.addEventListener('click', clearCanvas)
+window.addEventListener("keydown", handleKey); 
+btn.addEventListener("click", clearCanvas);
