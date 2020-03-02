@@ -66,16 +66,16 @@ function handleKey(e) {
 }
 
 // Clear/Shake function
-function clearCanvas(){
-    canvas.classList.add('shake'); // Add shake class
-    ctx.clearRect(0,0, width, height); // Delete canvas from starting point to end
-    canvas.addEventListener(
-        'animationend', // Event listener for animation end
-        function(){
-            canvas.classList.remove('shake') // Remove shake class
-        }
-    )
+function clearCanvas() {
+  canvas.classList.add("shake"); // Add shake class
+  ctx.clearRect(0, 0, width, height); // Delete canvas from starting point to end
+  canvas.addEventListener(
+    "animationend", // Event listener for animation end
+    function() {
+      canvas.classList.remove("shake"); // Remove shake class
+    }
+  );
 }
 // Listen for arrow keys
-window.addEventListener("keydown", handleKey); 
+window.addEventListener("keydown", handleKey);
 btn.addEventListener("click", clearCanvas);

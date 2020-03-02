@@ -57,3 +57,10 @@ canvas.shake{
         transform: translate3d(4px, 0, 0);
     }
 }
+
+@media only screen and (max-width: 600px) {
+#etch-a-sketch{
+    width: 415px;
+    height: 520px;
+}
+  }
