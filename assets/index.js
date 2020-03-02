@@ -4,7 +4,7 @@ const canvas = document.querySelector("#etch-a-sketch");
 const ctx = canvas.getContext("2d");
 // Shake button
 const btn = document.querySelector(".shake");
-const moveAmount = 10;
+const moveAmount = 20;
 // Grab width and height from canvas deconstructing
 const { width, height } = canvas;
 // Setup canvas for drawing
