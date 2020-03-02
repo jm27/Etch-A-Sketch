@@ -58,7 +58,15 @@ function draw({ key }) {
 }
 
 // Write a handler for keys
+function handleKey(e) {
+    if (e.key.includes('Arrow')) {
+        e.preventDefault(); // Prevent default only on Arrow keys
+        draw({key : e.key}); // Passing key is equal to key pressed 
+    }
+}
 
 // Clear/Shake function
 
 // Listen for arrow keys
+window.addEventListener('keydown', handleKey);
+btn.addEventListener('click', clearCanvas)
