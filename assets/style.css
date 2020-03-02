@@ -9,7 +9,7 @@ body {
 }
 
 canvas {
-  border: 30px solid #e80000;
+  border: 30px solid #d50000;
   border-radius: 10px;
   /* Set the width and height to half 
   the actual size so it doesn't look pixelated */
@@ -20,6 +20,22 @@ canvas {
 
 canvas.shake{
     animation: shake 0.5s linear 1;
+}
+
+.clearBtn{
+    text-align: center;
+}
+
+.shake-btn{
+    background:    #ff5131;
+    background:    linear-gradient(#ff5131, #9b0000);
+    border-radius: 5px;
+    padding:       8px 20px;
+    color:         #ffffff;
+    display:       inline-block;
+    font:          normal bold 24px/1 "Calibri", sans-serif;
+    text-align:    center;
+    text-shadow:   1px 1px #000000;
 }
 
 @keyframes shake {
