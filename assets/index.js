@@ -5,6 +5,9 @@ const ctx = canvas.getContext("2d");
 // Shake button
 const btn = document.querySelector(".shake-btn");
 const btnUp = document.querySelector(".up-btn");
+const btnDown = document.querySelector(".down-btn");
+const btnLeft = document.querySelector(".left-btn");
+const btnRight = document.querySelector(".right-btn");
 const moveAmount = 20;
 // Grab width and height from canvas deconstructing
 const { width, height } = canvas;
@@ -83,6 +86,10 @@ function clearCanvas() {
 }
 // Listen for arrow keys
 window.addEventListener("keydown", handleKey);
+// Listen for click on shake button
 btn.addEventListener("click", clearCanvas);
-
+// Listen for click on directions buttons
 btnUp.addEventListener('click', handleClick);
+btnDown.addEventListener('click', handleClick);
+btnLeft.addEventListener('click', handleClick);
+btnRight.addEventListener('click', handleClick);

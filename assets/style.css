@@ -22,7 +22,7 @@ canvas.shake{
     animation: shake 0.5s linear 1;
 }
 
-.clearBtn{
+.buttons{
     text-align: center;
 }
 
