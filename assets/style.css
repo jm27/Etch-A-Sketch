@@ -58,9 +58,18 @@ canvas.shake{
     }
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 900px) {
 #etch-a-sketch{
-    width: 415px;
+    width: 515px;
     height: 520px;
 }
   }
+
+  
+@media only screen and (max-width: 600px) {
+    #etch-a-sketch{
+        width: 355px;
+        height: 520px;
+    }
+      }
