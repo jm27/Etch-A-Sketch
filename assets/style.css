@@ -26,7 +26,7 @@ canvas.shake{
     text-align: center;
 }
 
-.shake-btn{
+.btns{
     background:    #ff5131;
     background:    linear-gradient(#ff5131, #9b0000);
     border-radius: 5px;
