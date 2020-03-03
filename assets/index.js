@@ -4,6 +4,7 @@ const canvas = document.querySelector("#etch-a-sketch");
 const ctx = canvas.getContext("2d");
 // Shake button
 const btn = document.querySelector(".shake-btn");
+const btnUp = document.querySelector(".up-btn");
 const moveAmount = 20;
 // Grab width and height from canvas deconstructing
 const { width, height } = canvas;
@@ -65,6 +66,10 @@ function handleKey(e) {
   }
 }
 
+function handleClick(e){
+    draw({ key: e.target.name });
+}
+
 // Clear/Shake function
 function clearCanvas() {
   canvas.classList.add("shake"); // Add shake class
@@ -79,3 +84,5 @@ function clearCanvas() {
 // Listen for arrow keys
 window.addEventListener("keydown", handleKey);
 btn.addEventListener("click", clearCanvas);
+
+btnUp.addEventListener('click', handleClick);
