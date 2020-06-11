@@ -12,6 +12,8 @@ Clone the git project to your machine (example below is using ssh)
 git clone git@github.com:jm27/Etch-A-Sketch.git
 
 ## Demo
+![Homepage](Etch-A-Sketch-Demo.gif)
+
 There is a demo of this app available on github. You can interact with the app and see the full functionality. 
 
 Each time the page loads the first dot starts in a random position of the canvas.
